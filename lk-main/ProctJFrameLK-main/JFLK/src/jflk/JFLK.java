@@ -493,7 +493,7 @@ public class JFLK extends javax.swing.JFrame {
             txtcur.setText("Informe o curso!");
         }
         if (responsavel.isEmpty()&& idade < 18) {
-        
+                txtrep.setVisible(true);
                 txtrep.setText("Informe o responsavel!");
             
         } else {
