@@ -494,7 +494,7 @@ public class JFLK extends javax.swing.JFrame {
             if (curso.isEmpty()) {
                 txtcur.setText("Informe o curso!");
             }
-            if (responsavel.isEmpty()&& idade < 18 && (!(year.isEmpty()))) {
+            if ((!year.isEmpty()) &&responsavel.isEmpty()&& idade < 18 ) {
                 txtrep.setVisible(true);
                 txtrep.setText("Informe o responsavel!");
             } 
@@ -582,8 +582,8 @@ public class JFLK extends javax.swing.JFrame {
         txtrep.setText(" ");
         buttonGroup1.clearSelection();
           if(idade<18){
-           lblresp.setVisible(false);
-           txtresponsavel.setVisible(false);
+             lblresp.setVisible(true);
+             txtresponsavel.setVisible(true);
        }
        
     }//GEN-LAST:event_voltarActionPerformed
