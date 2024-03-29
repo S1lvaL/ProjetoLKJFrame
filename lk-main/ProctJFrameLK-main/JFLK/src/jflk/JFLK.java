@@ -494,7 +494,7 @@ public class JFLK extends javax.swing.JFrame {
             if (curso.isEmpty()) {
                 txtcur.setText("Informe o curso!");
             }
-            if ((!year.isEmpty()) &&responsavel.isEmpty()&& idade < 18 ) {
+            if ((!year.isEmpty()) && responsavel.isEmpty() && idade < 18 ) {
                 txtrep.setVisible(true);
                 txtrep.setText("Informe o responsavel!");
             } 
@@ -550,7 +550,7 @@ public class JFLK extends javax.swing.JFrame {
                 lblresp.setVisible(false);
             }
         } catch (Exception e) {
-            System.out.println("Data Inválida!");
+            txtdata.setText("Data Inválida!");
         }
         
         
