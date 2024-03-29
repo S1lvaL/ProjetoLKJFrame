@@ -480,24 +480,26 @@ public class JFLK extends javax.swing.JFrame {
             curso = quimica.getText();
         }
         String responsavel = txtresponsavel.getText();
+        
         if(name.isEmpty() || year.isEmpty() || ano.isEmpty() || curso.isEmpty() || responsavel.isEmpty()){
-        if (name.isEmpty()) {
-            txtno.setText("Informe o nome!");
-        }
-        if (year.isEmpty()) {
-            txtdata.setText("Informe a data de nascimento!");
-        }
-        if (ano.isEmpty()) {
-            txtser.setText("Informe o ano!");
-        }
-        if (curso.isEmpty()) {
-            txtcur.setText("Informe o curso!");
-        }
-        if (responsavel.isEmpty()&& idade < 18 && (!(year.isEmpty()))) {
+            if (name.isEmpty()) {
+                txtno.setText("Informe o nome!");
+            }
+            if (year.isEmpty()) {
+                txtdata.setText("Informe a data de nascimento!");
+            }
+            if (ano.isEmpty()) {
+                txtser.setText("Informe o ano!");
+            }
+            if (curso.isEmpty()) {
+                txtcur.setText("Informe o curso!");
+            }
+            if (responsavel.isEmpty()&& idade < 18 && (!(year.isEmpty()))) {
                 txtrep.setVisible(true);
                 txtrep.setText("Informe o responsavel!");
+            } 
         } 
-        } else {
+        else {
             lblnome.setText(name);
             lblnascimento.setText(year);
             lblserie.setText(ano);
