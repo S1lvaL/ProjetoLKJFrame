@@ -480,6 +480,7 @@ public class JFLK extends javax.swing.JFrame {
             curso = quimica.getText();
         }
         String responsavel = txtresponsavel.getText();
+        if(name.isEmpty() || year.isEmpty() || ano.isEmpty() || curso.isEmpty() || responsavel.isEmpty()){
         if (name.isEmpty()) {
             txtno.setText("Informe o nome!");
         }
@@ -492,10 +493,10 @@ public class JFLK extends javax.swing.JFrame {
         if (curso.isEmpty()) {
             txtcur.setText("Informe o curso!");
         }
-        if (responsavel.isEmpty()&& idade < 18) {
+        if (responsavel.isEmpty()&& idade < 18 && (!(year.isEmpty()))) {
                 txtrep.setVisible(true);
                 txtrep.setText("Informe o responsavel!");
-            
+        } 
         } else {
             lblnome.setText(name);
             lblnascimento.setText(year);
@@ -572,8 +573,13 @@ public class JFLK extends javax.swing.JFrame {
         txtserie.setText(" ");
         txtresponsavel.setText(" ");
         txtnascimento.setText(null);
+        txtno.setText(" ");
+        txtser.setText(" ");
+        txtdata.setText(" ");
+        txtcur.setText(" ");
+        txtrep.setText(" ");
         buttonGroup1.clearSelection();
-          if(idade>18){
+          if(idade<18){
            lblresp.setVisible(false);
            txtresponsavel.setVisible(false);
        }
