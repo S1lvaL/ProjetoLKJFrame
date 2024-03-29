@@ -481,18 +481,17 @@ public class JFLK extends javax.swing.JFrame {
         }
         String responsavel = txtresponsavel.getText();
         
-        if(name.isEmpty() || year.isEmpty() || ano.isEmpty() || curso.isEmpty() || responsavel.isEmpty()){
             if (name.isEmpty()) {
                 txtno.setText("Informe o nome!");
-            }
-            if (year.isEmpty()) {
-                txtdata.setText("Informe a data de nascimento!");
             }
             if (ano.isEmpty()) {
                 txtser.setText("Informe o ano!");
             }
             if (curso.isEmpty()) {
                 txtcur.setText("Informe o curso!");
+            }
+            if (year.isEmpty()) {
+                txtdata.setText("Informe a data de nascimento!");
             }
             if (responsavel.isEmpty() && idade < 18 ) {
                 txtrep.setVisible(true);
